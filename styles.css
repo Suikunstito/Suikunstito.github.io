@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e050f;
+    color: #f0f0f0;
+}
+
+.header {
+    padding: 0px 0;
+    background-color: #0e050f;
+    position: relative;
+}
+
+
+
+/* Estilos para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 1024px) {
+    .header-content {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .name-title h1 {
+        font-size: 64px;
+    }
+
+    .name-title h2 {
+        font-size: 32px;
+    }
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-content {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name-title h1 {
+        font-size: 48px;
+    }
+
+    .name-title h2 {
+        font-size: 24px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .header {
+        padding: 50px 0;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 150px;
+    }
+
+    .name-title h1 {
+        font-size: 36px;
+    }
+
+    .name-title h2 {
+        font-size: 18px;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+
+.header-content {
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid #2d2d2d;
+    object-fit: cover;
+}
+
+
+.name-title {
+    margin-top: 20px;
+}
+
+.name-title h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.name-title h2 {
+    font-weight: normal;
+    color: #b3b3b3;
+}
+
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #b3b3b3;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #b3b3b3;
+}
+
+body {
+    padding-top: 75px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.dark-bg {
+    background-color: #0e050f;
+}
+
+section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1b091d ;
+}
